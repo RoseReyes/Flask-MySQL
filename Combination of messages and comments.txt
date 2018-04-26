@@ -1,0 +1,3 @@
+# combining messages and comments but without name of who commented it
+    # query = "select messages.message_id, concat_ws(' ', users.first_name, users.last_name) as name, messages.message, date_format(messages.created_at, '%M %D, %Y') as time, comments.comment from users left join messages on users.user_id = messages.user_id left outer join comments on messages.message_id = comments.message_id where users.user_id = {} order by messages.message_id desc, comments.comment_id asc".format(session['user_id'])
+    

@@ -1,0 +1,8 @@
+OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user '123'@'localhost' (using password: YES)") (Background on this error at: http://sqlalche.me/e/e3q8)
+Solution - corrected the host value, user and password 
+
+ValueError: invalid literal for int() with base 10: ''
+Solution - changed port to int not an empty string
+
+TypeError: query_db() takes exactly 3 arguments (2 given)
+Solution: supplied missing argument
